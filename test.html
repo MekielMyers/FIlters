@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Test</title>
+</head>
+<body>
+    <p>Enter a phone number</p>
+    <input name="tel" id="phone" type="tel">
+    <button type="submit" onclick="checkNumber()">Submit</button>
+    <div id="ans"></div>
+</body>
+<script>
+    var x = document.getElementById("phone")
+    var y = document.getElementById("ans")
+    function checkNumber(){
+        if(x.value === "111-444-7777"){
+            y.innerHTML = "valid"
+        }
+        else{
+            y.innerHTML = "Not Valid"
+        }
+    }
+</script>
+</html>
